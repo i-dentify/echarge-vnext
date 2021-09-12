@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <AssemblyName>ECharge.EventSourcing.EventStore</AssemblyName>
+        <RootNamespace>ECharge.EventSourcing.EventStore</RootNamespace>
+        <LangVersion>default</LangVersion>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Autofac" Version="6.2.0" />
+        <PackageReference Include="EventStore.Client.Grpc.Streams" Version="21.2.0" />
+        <PackageReference Include="Microsoft.Extensions.Options" Version="5.0.0" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\ECharge.Core\ECharge.Core.csproj" />
+    </ItemGroup>
+</Project>

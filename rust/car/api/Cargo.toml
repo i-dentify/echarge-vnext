@@ -1,0 +1,24 @@
+[package]
+name = "echarge-car-api"
+version = "0.1.0"
+edition = "2018"
+authors = ["Mario Adam <mario.adam@i-dentify.de>"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+echarge-car-lib = { path = "../lib" }
+actix-web = { version = "4.0.0-beta.9", default-features = false }
+async-graphql = { git = "https://github.com/async-graphql/async-graphql", rev = "57dfaf62363242156648b713b59e178191daac85", features = [
+    "dataloader",
+] }
+async-graphql-actix-web = { git = "https://github.com/async-graphql/async-graphql", rev = "57dfaf62363242156648b713b59e178191daac85" }
+dotenv = "0.15.0"
+uuid = { version = "0.8", features = ["serde", "v4"] }
+serde = { version = "1.0.128", features = ["derive"] }
+eventstore = "1.0.0"
+mongodb = "2.0.0-beta.3"
+fluent = "0.16.0"
+fluent-resmgr = "0.0.4"
+fluent-bundle = "0.15.1"
+once_cell = "1.8.0"

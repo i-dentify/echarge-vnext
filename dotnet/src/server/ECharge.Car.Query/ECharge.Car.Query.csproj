@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <AssemblyName>ECharge.Car.Query</AssemblyName>
+        <RootNamespace>ECharge.Car.Query</RootNamespace>
+        <LangVersion>default</LangVersion>
+    </PropertyGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\ECharge.Car.Data.Entities\ECharge.Car.Data.Entities.csproj" />
+        <ProjectReference Include="..\ECharge.Car.Models\ECharge.Car.Models.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="AutoMapper" Version="10.1.1" />
+    </ItemGroup>
+
+</Project>

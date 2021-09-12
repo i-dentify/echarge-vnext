@@ -1,0 +1,41 @@
+version: "3.8"
+
+networks:
+  echarge:
+    name: echarge
+    driver: bridge
+    attachable: true
+
+services:
+  eventstore-cars:
+    image: eventstore/eventstore:21.6.0-buster-slim
+    environment:
+      - EVENTSTORE_CLUSTER_SIZE=1
+      - EVENTSTORE_RUN_PROJECTIONS=All
+      - EVENTSTORE_START_STANDARD_PROJECTIONS=true
+      - EVENTSTORE_EXT_TCP_PORT=1113
+      - EVENTSTORE_HTTP_PORT=2113
+      - EVENTSTORE_INSECURE=true
+      - EVENTSTORE_ENABLE_EXTERNAL_TCP=true
+      - EVENTSTORE_ENABLE_ATOM_PUB_OVER_HTTP=true
+    ports:
+      - 127.0.0.1:11113:1113
+      - 127.0.0.1:12113:2113
+    volumes:
+      - eventstore-cars-data:/var/lib/eventstore
+      - eventstore-cars-logs:/var/log/eventstore
+
+  mongodb-cars:
+    image: mongo
+    environment:
+      - PUID=1000
+      - GUID=1000
+    ports:
+      - 127.0.0.1:27017:27017
+    volumes:
+      - mongodb-cars-data:/data/db
+
+volumes:
+  eventstore-cars-data:
+  eventstore-cars-logs:
+  mongodb-cars-data:

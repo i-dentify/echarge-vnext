@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <AssemblyName>ECharge.Car.Events</AssemblyName>
+        <RootNamespace>ECharge.Car.Events</RootNamespace>
+        <LangVersion>default</LangVersion>
+    </PropertyGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\ECharge.Core\ECharge.Core.csproj" />
+    </ItemGroup>
+</Project>

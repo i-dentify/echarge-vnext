@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <AssemblyName>ECharge.Car.Mapping</AssemblyName>
+        <RootNamespace>ECharge.Car.Mapping</RootNamespace>
+        <LangVersion>default</LangVersion>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="AutoMapper" Version="10.1.1" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\ECharge.Car.Events\ECharge.Car.Events.csproj" />
+        <ProjectReference Include="..\ECharge.Car.Models\ECharge.Car.Models.csproj" />
+    </ItemGroup>
+</Project>

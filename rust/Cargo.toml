@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "car/lib",
+    "car/api",
+    "car/worker"
+]

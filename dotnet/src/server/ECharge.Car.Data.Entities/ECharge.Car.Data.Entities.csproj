@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <AssemblyName>ECharge.Car.Data.Entities</AssemblyName>
+        <RootNamespace>ECharge.Car.Data.Entities</RootNamespace>
+        <LangVersion>default</LangVersion>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="MongoDB.Driver" Version="2.13.1" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\ECharge.Data.Entities.MongoDB\ECharge.Data.Entities.MongoDB.csproj" />
+        <ProjectReference Include="..\ECharge.Data.Entities.MongoDb\ECharge.Data.Entities.MongoDb.csproj" />
+        <ProjectReference Include="..\ECharge.Data.Entities\ECharge.Data.Entities.csproj" />
+    </ItemGroup>
+</Project>

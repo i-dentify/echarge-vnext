@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <AssemblyName>ECharge.Data.Entities</AssemblyName>
+        <RootNamespace>ECharge.Data.Entities</RootNamespace>
+        <LangVersion>default</LangVersion>
+    </PropertyGroup>
+</Project>
