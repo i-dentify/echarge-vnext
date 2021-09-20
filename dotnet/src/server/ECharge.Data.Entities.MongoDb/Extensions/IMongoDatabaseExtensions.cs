@@ -24,6 +24,7 @@ namespace ECharge.Data.Entities.MongoDB.Extensions
 
     #endregion
 
+    // ReSharper disable once InconsistentNaming
     public static class IMongoDatabaseExtensions
     {
         #region [ Public methods ]

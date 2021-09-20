@@ -26,6 +26,7 @@ namespace ECharge.EventSourcing.EventStore.Extensions
 
     #endregion
 
+    // ReSharper disable once InconsistentNaming
     public static class IEventExtensions
     {
         #region [ Public methods ]
